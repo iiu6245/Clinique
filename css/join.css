@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.bodytext_area {width:640px; margin:50px auto}
+.bodytext_area .title{line-height:35px; font-size:25px; padding: 0 0 30px; text-align:center; letter-spacing:-1px}
+.bodytext_area .info_pilsoo {text-align:right;
+    padding-bottom:10px; font-size:12px; color:#666;}
+.bodytext_area .pilsoo_item:before {content:"*"; line-height:20px;  font-weight:bold; font-size:12px; color:#f00;}
+.bodytext_area .form{width:100%; border-top:2px solid #000; font-size:12px }
+    
+.form tbody tr th:after{content:"*"; 
+    position:relative;
+    font-weight:bold; font-size:4px; color:#f00; }
+.form tbody th {width:159px; padding:20px 0 0 20px; line-height:20px; vertical-align:top; text-align:left }
+.form tbody td {padding:10px 0}
+.form tbody tr td input[type=text],[type=password]{
+    width:332px; height:44px; padding:0 14px; border:1px solid #ccc; border-radius:3px; color:#333 }
+.form tbody tr td input[type=radio]{position:relative; 
+width:15px; height:15px; margin-right: 12px;}
+.form tbody tr td input[type=radio]:after{
+    content:"";
+    position:absolute;
+    color:#000;
+    left:50%;
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    margin:-5px 0 0 -5px;}
+.form tbody tr td .sex { padding:10px 52px 0 0;vertical-align:middle}
+.form tbody tr td .sex .tt {vertical-align:4px}
+
+.form tbody tr td .birth_day{
+    overflow: hidden;
+    width: 332px;
+    padding-left: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.form tbody tr td .birth_day input[type=text] {
+    /* float: left; */
+    width: 84px;
+    height: 40px;
+    border:0;
+    padding: 0 14px; 
+    text-align: center;
+}
+/* .form tbody tr td .birth_day .bar:after{
+    content: "/";
+    width: 22px;
+    height: 100%;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 42px;
+} */
+.check {padding-bottom:10px}
+.check .ico {font-size:18px; font-weight:600}
+.check_view  {
+    display:block; padding:0 0 10px; position:relative}
+.check_view input[type=checkbox] {vertical-align:middle}
+.sms_email{padding-bottom:10px}
+span .sub{display:block}
+
+.link_agree {
+    position:absolute; top:0; right:65px;
+}
+.link_agree:after {
+        content: '';
+        display: inline-block;
+        margin-top: 4px;
+        width: 6px;
+        height: 9px;
+        background: url(../img/link_agree.svg) no-repeat 50% 0;
+        background-size: 6px 9px;
+        vertical-align: top;
+
+}
+
+
+.form_footer {
+    padding-top:40px;
+    text-align:center;}
+.form_footer .btn_join{
+    width: 240px;
+    height: 56px;
+    font-size: 16px;
+    line-height: 54px;
+    background-color:#000;
+    border:1px solid #000;
+    border-radius:3px;
+    color:#fff}

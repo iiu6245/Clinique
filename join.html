@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLINIQUE</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/join.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+
+</head>
+
+
+<body>
+  <div id="header">
+    <div class="banner">
+      <p>첫구매 15% 할인 <a href="#">자세히보기</a></p>
+      <p>택배배송 지연관련안내 <a href="#">자세히보기</a></p>
+      <p>사은품 안내 <a href="#">자세히보기</a></p>
+    </div>
+
+    <div class="container cf">
+      <div class="first">
+         <ul>
+           <li><a href="join.html">회원가입</a></li>
+           <li><a href="login.html">로그인</a></li>
+           <li><a href="#">고객센터</a></li>
+         </ul>
+      </div>
+      <div class="headerlogo">
+        <h1 class="logo">
+          <a href="index.html"><img src="./img/logo.jpg" alt="크리니크로고"></a>
+        </h1>
+        </div>
+      <div class="menu">               
+        <ul class="depth1 cf">  
+          <li><a href="#">전체 카테고리</a></li>            
+          <li><a href="#">공식몰 단독혜택</a></li>
+          <li><a href="#">신제품</a></li>
+          <li><a href="#">베스트셀러</a></li>
+          <li><a href="#">크리니크 리얼리티</a></li>            
+          <li><a href="#">모이스처 써지</a></li>           
+       </ul>
+       
+      </div>
+      <div class="searchcart">
+        <div class="search">
+          <input type="text" id="search" name="search" label="검색어" placeholder="검색어를 입력해주세요">
+          <button type="button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="cart">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+  </div>
+</div> 
+
+    <div class="bodytext_area row">
+        
+        <!-- appForm -->
+      <form action="#" method="post" name="appForm" class="appForm">
+          <fieldset>
+
+                <h2 class="title">회원가입</h2>
+                <p class="info_pilsoo pilsoo_item">필수입력사항</p>
+        <table class="form">
+          <tbody>
+              <tr>
+                  <th>아이디</th>
+                  <td>
+                      <input type="text" id="userid" placeholder="6자 이상의 영문 혹은 영문과 숫자를 조합"> </td>
+              </tr>
+              <tr>
+                  <th>비밀번호</th>
+                  <td>
+                      <input type="password" id="password1" placeholder="비밀번호를 입력해주세요"></td>
+              </tr>
+              <tr>
+                  <th>비밀번호확인</th>
+                  <td>
+                    <input type="password" id="password2" placeholder="비밀번호를 한번 더 입력해주세요"></td>
+              </tr>
+              <tr>
+                  <th>이름</th>
+                  <td>
+                    <input type="text" id="name" placeholder="이름을 입력해주세요"></td>
+              </tr>
+              <tr>
+                  <th>이메일</th>
+                  <td><input type="text" id="email" placeholder="clinique@clinique.com"></td>
+              </tr>
+              <tr>
+                  <th>휴대폰</th>
+                  <td><input type="text" id="mobile" placeholder="숫자만 입력해주세요"></td>
+              </tr>
+              <tr>
+                  <th>주소</th>
+                  <td><input type="text" id="address" placeholder=""></td>
+              </tr>
+              <tr>
+                  <th>성별</th>
+                  <td>
+                      <label class="sex">
+                          <input type="radio" name="sex" value="m">
+                          <span class="tt">남자</span>
+                      </label>
+                      <label class="sex">
+                          <input type="radio" name="sex" value="w">
+                          <span class="tt">여자</span>
+                      </label>
+                      
+                  </td> 
+              </tr>
+              <tr>
+                  <th>생년월일</th>
+                  <td>
+                      <div class="birth_day">
+                          <input type="text" name="birth_day" id="birth_year" size="4" maxlength="4" placeholder="YYYY">
+                          <span class="bar">/</span>
+                          <input type="text" name="birth_day" id="birth_month" size="2" maxlength="2" placeholder="MM">
+                          <span class="bar">/</span>
+                          <input type="text" name="birth_day" id="birth_day" size="2" maxlength="2" placeholder="DD">
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>이용약관동의</th>
+                  <td>
+                    <div class="check">
+                      <input type="checkbox" name="all_chk">
+                      <span class="ico">
+                      전체 동의합니다.</span>
+                      <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+                    </div>
+                    <div class="check_view">
+                      <label class="check_agree">
+                        <input type="checkbox" name="agree">
+                        이용약관 동의
+                        <span class="sub">(필수)</span>
+                      </label>
+                      <a href="#none" class=link_agree>약관보기</a>
+                    </div>
+                    <div class="check_view">
+                      <label class="check_agree">
+                        <input type="checkbox" name="agree">
+                        개인정보 수집·이용 동의
+                        <span class="sub">(필수)</span>
+                      </label>
+                      <a href="#none" class=link_agree>약관보기</a>
+                    </div>
+                    <div class="check_view">
+                      <label class="check_agree">
+                        <input type="checkbox" name="agree">
+                        개인정보 수집·이용 동의
+                        <span class="sub">(선택)</span>
+                      </label>
+                      <a href="#none" class=link_agree>약관보기</a>
+                    </div>
+                    <div class="check_view">
+                      <label class="check_agree">
+                        <input type="checkbox" name="marketing">
+                        무료배송,할인쿠폰 등 혜택/정보 수신 동의
+                        <span class="sub">(선택)</span>
+                      </label>
+                    </div>
+                    <div class="sms_email">
+                      <label class="check_agree">
+                        <input type="checkbox" name="sms">
+                        SMS
+                      </label>
+                      <label class="check_agree">
+                        <input type="checkbox" name="email">
+                        이메일
+                      </label>
+                    
+                        <p class="sms_info">동의 시 한달간 [5% 적립]+[무제한 무료배송](첫 주문 후 적용)</p>
+                        </div>
+                    <div class="check_view">
+                      <input type="checkbox" value="n" name="fourteen_chk" required label="만 14세 이상">
+                      본인은 만 14세 이상입니다.
+                      <span class="sub">(필수)</span>
+                    </div>
+                  </td>
+              </tr>
+          </tbody>
+
+        </table>
+    </fieldset>
+          <div class="form_footer">
+                <button type="button" class="btn active btn_join" onclick="formJoinSubmit()">가입하기</button>
+          </div>
+        </form>
+        <!-- //appForm -->
+        
+    </div>
+
+    <footer id="footerbox">
+      <div id="footer">
+       <div class="firstrow">
+        <div class="info">
+          이엘씨에이한국(유) 대표:SLAVIN PAUL<br>
+          서울시 강남구 강남대로 382 (역삼동) 메리츠타워, 06232<br>
+          사업자등록번호 : 211-81-71889 <br>
+          통신판매업신고번호 : 강남-15737호<br>
+          고객관리지원팀 : 02-6971-3202  consumercare@kr.clinique.com<br>
+        </div>
+        
+        <div class="sns">
+          <p>Social Network</p>
+          <a href="#none"><i class="fab fa-twitter"></i><span class="blind">트위터</span></a>
+          <a href="#none"><i class="fab fa-facebook-square"></i><span class="blind">페이스북</span></a>
+          <a href="#none"><i class="fab fa-instagram"></i><span class="blind">인스타그램</span></a>
+        </div>
+      </div>
+        
+        <div class="copyright">COPYRIGHT  &copy; Clinique Laboratories, llc. All Rights Reserved </div>
+      
+        <div class="site">
+          <a href="#none">회사소개</a>
+          <a href="https://www.ftc.go.kr/www/bizCommList.do?key=232">사업자정보확인</a>
+          <a href="#none">개인정보처리방침</a>
+        </div>
+      </div>
+   </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+

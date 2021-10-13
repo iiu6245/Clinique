@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.loginbox {width:340px; margin:50px auto}
+.title{line-height:35px; font-size:25px; padding: 0 0 30px; text-align:center; letter-spacing:-1px}
+
+.writeform input{width: 100%;
+    height: 54px;
+    padding: 10px 19px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    font-size: 14px;
+    color:#333;
+    line-height: 20px;
+    outline: none;
+    margin-top:10px}
+.checkbox_save{ font-size:13px; padding:10px 0 28px ;text-align: center; vertical-align: middle;}
+.chk_security{float:left}
+.chk_security input[type=checkbox]{vertical-align:middle}
+.login_search{float:right}
+.login_search .bar{
+    display:inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 3px 6px 0;
+    background-color: #333;
+}
+
+.loginbox button {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 54px;
+    border-radius: 3px;
+    text-align: center;
+    margin-top:10px;
+    border:1px solid #000
+}
+.btn_login {background-color:black;}
+
+.btn_login .text { color:#fff}
